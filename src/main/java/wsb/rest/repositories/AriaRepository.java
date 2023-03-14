@@ -11,7 +11,7 @@ public class AriaRepository {
 
     static Long currentId = 25L;
 
-    private List<Aria> arias = new LinkedList<>() {{
+    private final List<Aria> arias = new LinkedList<>() {{
         add(new Aria(1L, "Largo al factotum", "Figaro", "Gioachino Rossini", "The Barber of Seville", 1816L, "Italian"));
         add(new Aria(2L, "Di Provenza il mar", "Germont", "Giuseppe Verdi", "La traviata", 1853L, "Italian"));
         add(new Aria(3L, "Votre toast, je peux vous le rendre", "Escamillo", "Georges Bizet", "Carmen", 1875L, "French"));
@@ -82,7 +82,7 @@ public class AriaRepository {
 
     public void delete(Long id) {
         Aria ariaToRemove = find(id);
-        if (ariaToRemove == null){
+        if (ariaToRemove == null) {
             return;
         }
         arias.remove(ariaToRemove);

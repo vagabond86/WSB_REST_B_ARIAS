@@ -15,7 +15,7 @@ public class AriaService {
         this.ariaRepository = ariaRepository;
     }
 
-    public List<Aria> findAll(){
+    public List<Aria> findAll() {
         return ariaRepository.findAll();
     }
 

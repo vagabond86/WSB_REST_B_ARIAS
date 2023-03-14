@@ -1,0 +1,528 @@
+GET http://localhost:8080/arias
+
+<> 2023-03-14T143256.200.json
+
+###
+
+DELETE http://localhost:8080/arias/5
+
+###
+
+DELETE http://localhost:8080/arias/5
+
+###
+
+PUT http://localhost:8080/arias/200
+Content-Type: application/json
+
+{
+  "name": "Zakaż, niech ożywcze słonko",
+  "character": "Stanisław",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Verbum Nobile",
+  "year": 1861,
+  "language": "Polish"
+}
+
+###
+
+DELETE http://localhost:8080/arias/6
+
+###
+
+GET http://localhost:8080/arias
+
+<> 2023-03-14T143203.200.json
+
+###
+
+PUT http://localhost:8080/arias/20
+Content-Type: application/json
+
+{
+  "name": "Zakaż, niech ożywcze słonko",
+  "character": "Stanisław",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Verbum Nobile",
+  "year": 1861,
+  "language": "Polish"
+}
+
+<> 2023-03-14T143157.200.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T143153.201.json
+
+###
+
+GET http://localhost:8080/arias/10
+
+<> 2023-03-14T143149.200.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T143136.405.json
+
+###
+
+GET http://localhost:8080/arias/10
+
+<> 2023-03-14T143119.404.json
+
+###
+
+GET http://localhost:8080/arias
+
+<> 2023-03-14T143116.200.json
+
+###
+
+GET http://localhost:8080/arias/10
+
+<> 2023-03-14T143110.404.json
+
+###
+
+GET http://localhost:8080/arias
+
+<> 2023-03-14T142710.200.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141508-2.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141508-1.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141508.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141507-2.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141507-1.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141507.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141506-1.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141506.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141505.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141504-1.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141504.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141503.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141502-1.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141502.201.json
+
+###
+
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1864,
+  "language": "Polish"
+}
+
+<> 2023-03-14T141457.201.json
+
+###
+
+GET http://localhost:8080/arias
+
+<> 2023-03-14T141444.200.json
+
+###
+
+DELETE http://localhost:8080/arias/6
+
+###
+
+DELETE http://localhost:8080/arias/5
+
+###
+
+DELETE http://localhost:8080/arias/4
+
+###
+
+DELETE http://localhost:8080/arias/3
+
+###
+
+DELETE http://localhost:8080/arias/2
+
+###
+
+GET http://localhost:8080/arias
+
+<> 2023-03-14T141413.200.json
+
+###
+
+DELETE http://localhost:8080/arias/1
+
+###
+
+DELETE http://localhost:8080/arias/1
+
+<> 2023-03-14T141348.500.json
+
+###
+
+PUT http://localhost:8080/arias/20
+Content-Type: application/json
+
+{
+  "name": "Zakaż, niech ożywcze słonko",
+  "character": "Stanisław",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Verbum Nobile",
+  "year": 1861,
+  "language": "Polish"
+}
+
+<> 2023-03-14T134300.200.json
+
+###
+
+PUT http://localhost:8080/arias/200
+Content-Type: application/json
+
+{
+  "name": "Zakaż, niech ożywcze słonko",
+  "character": "Stanisław",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Verbum Nobile",
+  "year": 1861,
+  "language": "Polish"
+}
+
+###
+
+PUT http://localhost:8080/arias/200
+Content-Type: application/json
+
+{
+  "name": "Zakaż, niech ożywcze słonko",
+  "character": "Stanisław",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Verbum Nobile",
+  "year": 1861,
+  "language": "Polish"
+}
+
+<> 2023-03-14T134100.500.json
+
+###
+
+GET http://localhost:8080/arias
+
+<> 2023-03-14T115909.200.json
+
+###
+
+GET http://localhost:8080/arias/10
+
+<> 2023-03-14T115904.200.json
+
+###
+
+PUT http://localhost:8080/arias/2
+Content-Type: application/json
+
+{
+  "name": "Zakaż, niech ożywcze słonko",
+  "character": "Stanisław",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Verbum Nobile",
+  "year": 1861,
+  "language": "Polish"
+}
+
+<> 2023-03-14T115900.200.json
+
+###
+
+GET http://localhost:8080/arias/10
+
+<> 2023-03-14T115845.200.json
+
+###
+
+GET http://localhost:8080/arias/10
+
+<> 2023-03-14T115841.200.json
+
+###
+
+PUT http://localhost:8080/arias/2
+Content-Type: application/json
+
+{
+  "name": "Zakaż, niech ożywcze słonko",
+  "character": "Stanisław",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Verbum Nobile",
+  "year": 1861,
+  "language": "Polish"
+}
+
+<> 2023-03-14T115835.200.json
+
+###
+
+PUT http://localhost:8080/arias/26
+Content-Type: application/json
+
+{
+  "name": "Zakaż, niech ożywcze słonko",
+  "character": "Stanisław",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Verbum Nobile",
+  "year": 1861,
+  "language": "Polish"
+}
+
+<> 2023-03-14T115823.500.json
+
+###
+
+GET http://localhost:8080/arias
+
+<> 2023-03-14T115815.200.json
+
+###
+
+GET http://localhost:8080/arias
+
+<> 2023-03-14T115803.200.json
+
+###
+
