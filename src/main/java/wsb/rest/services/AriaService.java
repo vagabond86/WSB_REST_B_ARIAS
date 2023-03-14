@@ -7,11 +7,11 @@ import wsb.rest.repositories.AriaRepository;
 import java.util.List;
 
 @Service
-public class AriaServices {
+public class AriaService {
 
     final private AriaRepository ariaRepository;
 
-    public AriaServices(AriaRepository ariaRepository) {
+    public AriaService(AriaRepository ariaRepository) {
         this.ariaRepository = ariaRepository;
     }
 
@@ -25,5 +25,9 @@ public class AriaServices {
 
     public Aria create(Aria arias) {
         return ariaRepository.create(arias);
+    }
+
+    public Aria update(Long id, Aria aria) {
+        return ariaRepository.update(id, aria);
     }
 }

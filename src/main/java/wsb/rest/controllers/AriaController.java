@@ -4,27 +4,27 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import wsb.rest.models.Aria;
-import wsb.rest.services.AriaServices;
+import wsb.rest.services.AriaService;
 
 import java.util.List;
 
 @RestController
 public class AriaController {
 
-    final private AriaServices ariaServices;
+    final private AriaService ariaService;
 
-    public AriaController(AriaServices ariaServices) {
-        this.ariaServices = ariaServices;
+    public AriaController(AriaService ariaService) {
+        this.ariaService = ariaService;
     }
 
     @GetMapping("/arias")
     List<Aria> findAll() {
-        return ariaServices.findAll();
+        return ariaService.findAll();
     }
 
     @GetMapping("/arias/{id}")
     ResponseEntity findAria(@PathVariable Long id) {
-        Aria aria = ariaServices.find(id);
+        Aria aria = ariaService.find(id);
         if (aria != null) {
             return ResponseEntity.ok(aria);
         } else {
@@ -34,7 +34,7 @@ public class AriaController {
 
     @PostMapping("/arias")
     ResponseEntity<Aria> create(@RequestBody Aria aria) {
-        Aria createdAria = ariaServices.create(aria);
+        Aria createdAria = ariaService.create(aria);
         if (createdAria != null) {
             return ResponseEntity.status(HttpStatus.CREATED).body(createdAria);
         } else {
@@ -42,5 +42,14 @@ public class AriaController {
         }
     }
 
+    @PutMapping("/arias/{id}")
+    ResponseEntity<Aria> update(@PathVariable Long id, @RequestBody Aria aria) {
+        Aria updatedAria = ariaService.update(id, aria);
+        if (updatedAria != null) {
+            return ResponseEntity.ok(updatedAria);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
 
 }

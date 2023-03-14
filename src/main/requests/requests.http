@@ -9,10 +9,23 @@ POST http://localhost:8080/arias
 Content-Type: application/json
 
 {
-  "name": "Kto z mych dziewek serce której, cnych afektów",
+  "name": "Kto z mych dziewek serce której, cnych afektów wplącze nić",
   "character": "Miecznik",
   "composer": "Stanisław Moniuszko",
   "opera": "Straszny Dwór",
-  "year": 1984,
+  "year": 1864,
+  "language": "Polish"
+}
+
+### update
+PUT http://localhost:8080/arias/20
+Content-Type: application/json
+
+{
+  "name": "Zakaż, niech ożywcze słonko",
+  "character": "Stanisław",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Verbum Nobile",
+  "year": 1861,
   "language": "Polish"
 }

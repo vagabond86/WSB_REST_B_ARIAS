@@ -63,4 +63,20 @@ public class AriaRepository {
         arias.add(createdAria);
         return createdAria;
     }
+
+    public Aria update(Long id, Aria aria) {
+        Aria ariaToUpdate = find(id);
+        if (ariaToUpdate == null) {
+            return null;
+        }
+
+        ariaToUpdate.setName(aria.getName());
+        ariaToUpdate.setCharacter(aria.getCharacter());
+        ariaToUpdate.setComposer(aria.getComposer());
+        ariaToUpdate.setOpera(aria.getOpera());
+        ariaToUpdate.setYear(aria.getYear());
+        ariaToUpdate.setLanguage(aria.getLanguage());
+
+        return ariaToUpdate;
+    }
 }
