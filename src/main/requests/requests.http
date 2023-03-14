@@ -3,3 +3,16 @@ GET http://localhost:8080/arias
 
 ### find one aria
 GET http://localhost:8080/arias/10
+
+### create
+POST http://localhost:8080/arias
+Content-Type: application/json
+
+{
+  "name": "Kto z mych dziewek serce której, cnych afektów",
+  "character": "Miecznik",
+  "composer": "Stanisław Moniuszko",
+  "opera": "Straszny Dwór",
+  "year": 1984,
+  "language": "Polish"
+}

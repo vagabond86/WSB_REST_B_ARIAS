@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class BaritoneArias {
+public class Aria {
 
 
     private Long id;
