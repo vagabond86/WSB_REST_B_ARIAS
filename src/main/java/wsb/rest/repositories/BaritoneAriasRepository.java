@@ -5,6 +5,7 @@ import wsb.rest.models.BaritoneArias;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Repository
 public class BaritoneAriasRepository {
@@ -37,7 +38,13 @@ public class BaritoneAriasRepository {
     }};
 
     public List<BaritoneArias> findAll() {
-
         return arias;
+    }
+
+    public BaritoneArias find(Long id) {
+        return arias.stream()
+                .filter(arias -> arias.getId().equals(id))
+                .findFirst()
+                .orElse(null);
     }
 }

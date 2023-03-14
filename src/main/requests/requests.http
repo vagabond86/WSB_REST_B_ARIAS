@@ -1,1 +1,5 @@
+### find all arias
 GET http://localhost:8080/arias
+
+### find one aria
+GET http://localhost:8080/arias/10

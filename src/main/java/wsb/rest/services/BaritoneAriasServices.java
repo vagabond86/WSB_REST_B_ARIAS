@@ -18,4 +18,8 @@ public class BaritoneAriasServices {
     public List<BaritoneArias> findAll(){
         return baritoneAriasRepository.findAll();
     }
+
+    public BaritoneArias find(Long id) {
+        return baritoneAriasRepository.find(id);
+    }
 }
