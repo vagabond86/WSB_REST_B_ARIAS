@@ -52,4 +52,10 @@ public class AriaController {
         }
     }
 
+    @DeleteMapping("/arias/{id}")
+    ResponseEntity<Void> delete(@PathVariable Long id) {
+        ariaService.delete(id);
+        return ResponseEntity.noContent().build();
+    }
+
 }

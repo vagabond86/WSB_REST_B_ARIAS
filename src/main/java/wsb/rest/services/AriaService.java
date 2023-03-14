@@ -30,4 +30,8 @@ public class AriaService {
     public Aria update(Long id, Aria aria) {
         return ariaRepository.update(id, aria);
     }
+
+    public void delete(Long id) {
+        ariaRepository.delete(id);
+    }
 }

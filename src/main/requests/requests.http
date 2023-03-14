@@ -29,3 +29,6 @@ Content-Type: application/json
   "year": 1861,
   "language": "Polish"
 }
+
+### delete
+DELETE http://localhost:8080/arias/6

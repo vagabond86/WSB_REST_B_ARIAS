@@ -79,4 +79,12 @@ public class AriaRepository {
 
         return ariaToUpdate;
     }
+
+    public void delete(Long id) {
+        Aria ariaToRemove = find(id);
+        if (ariaToRemove == null){
+            return;
+        }
+        arias.remove(ariaToRemove);
+    }
 }
