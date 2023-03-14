@@ -9,6 +9,7 @@ import wsb.rest.services.AriaService;
 import java.util.List;
 
 @RestController
+@RequestMapping("/arias")
 public class AriaController {
 
     final private AriaService ariaService;
@@ -17,32 +18,32 @@ public class AriaController {
         this.ariaService = ariaService;
     }
 
-    @GetMapping("/arias")
+    @GetMapping
     List<Aria> findAll() {
         return ariaService.findAll();
     }
 
-    @GetMapping("/arias/{id}")
+    @GetMapping("/{id}")
     ResponseEntity findAria(@PathVariable Long id) {
         Aria aria = ariaService.find(id);
         if (aria != null) {
             return ResponseEntity.ok(aria);
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+            return ResponseEntity.notFound().build();
         }
     }
 
-    @PostMapping("/arias")
+    @PostMapping
     ResponseEntity<Aria> create(@RequestBody Aria aria) {
         Aria createdAria = ariaService.create(aria);
         if (createdAria != null) {
             return ResponseEntity.status(HttpStatus.CREATED).body(createdAria);
         } else {
-            return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).build();
+            return ResponseEntity.unprocessableEntity().build();
         }
     }
 
-    @PutMapping("/arias/{id}")
+    @PutMapping("/{id}")
     ResponseEntity<Aria> update(@PathVariable Long id, @RequestBody Aria aria) {
         Aria updatedAria = ariaService.update(id, aria);
         if (updatedAria != null) {
@@ -52,7 +53,7 @@ public class AriaController {
         }
     }
 
-    @DeleteMapping("/arias/{id}")
+    @DeleteMapping("/{id}")
     ResponseEntity<Void> delete(@PathVariable Long id) {
         ariaService.delete(id);
         return ResponseEntity.noContent().build();
